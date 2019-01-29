@@ -13,18 +13,19 @@
 
 @class KxMovieDecoder;
 
-extern NSString * const KxMovieParameterMinBufferedDuration;    // Float
-extern NSString * const KxMovieParameterMaxBufferedDuration;    // Float
-extern NSString * const KxMovieParameterDisableDeinterlacing;   // BOOL
+extern NSString *const KxMovieParameterMinBufferedDuration;    // Float
+extern NSString *const KxMovieParameterMaxBufferedDuration;    // Float
+extern NSString *const KxMovieParameterDisableDeinterlacing;   // BOOL
 
-@interface KxMovieViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface KxMovieViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-+ (id) movieViewControllerWithContentPath: (NSString *) path
-                               parameters: (NSDictionary *) parameters;
++ (id)movieViewControllerWithContentPath:(NSString *)path
+                              parameters:(NSDictionary *)parameters;
 
-@property (readonly) BOOL playing;
+@property(readonly) BOOL playing;
 
-- (void) play;
-- (void) pause;
+- (void)play;
+
+- (void)pause;
 
 @end
