@@ -348,7 +348,7 @@ enum {
 
 @implementation KxMovieGLView {
 
-    KxMovieDecoder *_decoder;
+    __weak KxMovieDecoder *_decoder;
     EAGLContext *_context;
     GLuint _framebuffer;
     GLuint _renderbuffer;

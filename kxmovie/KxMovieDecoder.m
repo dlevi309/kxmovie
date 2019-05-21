@@ -711,11 +711,14 @@ static int interrupt_callback(void *ctx);
 
     _path = path;
 
+    //open input
     kxMovieError errCode = [self openInput:path];
 
     if (errCode == kxMovieErrorNone) {
 
+        //open videoStream
         kxMovieError videoErr = [self openVideoStream];
+        //open AudioStream
         kxMovieError audioErr = [self openAudioStream];
 
         _subtitleStream = -1;

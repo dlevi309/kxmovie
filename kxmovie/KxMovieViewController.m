@@ -136,6 +136,7 @@ static NSMutableDictionary *gHistory;
 @property(readwrite) BOOL playing;
 @property(readwrite) BOOL decoding;
 @property(readwrite, strong) KxArtworkFrame *artworkFrame;
+
 @end
 
 @implementation KxMovieViewController
